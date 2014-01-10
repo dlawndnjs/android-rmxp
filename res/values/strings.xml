@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
     <string name="app_name">CreateRPG</string>
     <string-array name="arr_main_list">
         <item >New Project</item>
@@ -17,15 +17,18 @@
     <string name="str_rename">Rename</string>
     <string name="str_select">Select</string>
     <string name="str_error_empty">Please enter the new file name to the box in the top of the dialog and click this again.</string>
-    <string name="str_error_nonexist">No such file or directory.</string>
+    <string name="str_error_nonexist">Error : No such file or directory.</string>
+    <string name="str_error_discarded">Error : All changes has been discarded and was not recoverable.</string>
     <string name="str_error_observe_removed">This file has been deleted. Keep this file in the editor?</string>
     <string name="str_notify_edited">This file has been edited by another editor. Reload this file?</string>
-    <string name="str_no_open_files"><b>No open files</b></string>
+    <string name="str_no_open_files"><b>No open files.\nClick the icon in the top to open a file.</b></string>
     <string name="str_question_delete">This directory is not empty.\nAre you sure you want to delete it?</string>
     <string name="str_dir_path">Directory path</string>
     <string name="str_select_rtp">Select RTP..</string>
     <string name="str_ask_extract_rgssad_title">RGSSAD file detected!</string>
     <string name="str_ask_extract_rgssad">To load the project properly, the encrypted RGSSAD file should be extracted into the folder. Continue?</string>
+    <string name="str_ask_extract_rtp_title">Do you wish to extract RTP(Run-Time Package) files?</string>
+    <string name="str_ask_extract_rtp">The RTP must be extracted in order for this application to work properly. Continue?</string>
     <string name="str_ask_close_page">Close this page?</string>
     <string name="str_ask_terminate">Do you wish to terminate this queue?</string>
     <string name="str_import">Import</string>

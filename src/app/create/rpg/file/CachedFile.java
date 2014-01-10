@@ -29,10 +29,6 @@ public abstract class CachedFile extends FileObserver implements Parcelable {
 		public void onClosed(CachedFile file);
 	}
 	
-	protected void updateSelf () {
-		
-	}
-	
 	protected void notifyAllUsers () {
 		for (User u : mUsers)
 			u.onUpdate(this);
@@ -47,7 +43,7 @@ public abstract class CachedFile extends FileObserver implements Parcelable {
 		mHasChanged = false;
 		if (!byUser) {
 			if (mMain == null) mDiscarded = true;
-			else Toast.makeText(mMain, "!stub! err data discarded", Toast.LENGTH_SHORT).show();
+			else Toast.makeText(mMain, R.string.str_error_discarded, Toast.LENGTH_SHORT).show();
 		}
 		notifyAllUsers();
 	}
@@ -73,7 +69,7 @@ public abstract class CachedFile extends FileObserver implements Parcelable {
 	public void recover (ActivityProject project) {
 		mMain = project;
 		if (mDiscarded) {
-			Toast.makeText (project, "!stub! data discarded 2", Toast.LENGTH_SHORT).show();
+			Toast.makeText (project, R.string.str_error_discarded, Toast.LENGTH_SHORT).show();
 			mDiscarded = false;
 		}
 	}

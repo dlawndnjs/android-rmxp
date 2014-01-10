@@ -41,7 +41,8 @@ public class ActivityMain extends ListActivity implements OnItemClickListener {
 				}
 			};
 			new AlertDialog.Builder(this)
-				.setMessage("!stub! extract rtp confirm")
+				.setTitle(R.string.str_ask_extract_rtp_title)
+				.setMessage(R.string.str_ask_extract_rtp)
 				.setNegativeButton(android.R.string.no, cl)
 				.setPositiveButton(android.R.string.yes, cl)
 				.show(); 
